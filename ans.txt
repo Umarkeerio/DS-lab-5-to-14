@@ -1,0 +1,1 @@
+Breadth-First Search (BFS) explores graph/tree level by level, using a queue to visit neighboring nodes before deeper ones.

@@ -1,0 +1,7 @@
+## 1. Explain the Procedure of Queue Implementation Using Linked List
+
+I start by including the necessary library `iostream` and then define a `Node` structure, which holds an integer `data` and a pointer to the next node in the queue. I also define a constructor for the `Node` structure to initialize its values easily. After that, I create a `Queue` structure, which uses the `Node` structure to form a linked list. The `Queue` has a `head` pointer, which points to the first node in the queue and is initialized to `nullptr` to represent an empty queue.
+
+I implement the `enqueue` function to add new nodes to the queue. If the queue is empty (`head` is `nullptr`), I set the `head` to the new node. Otherwise, I traverse to the end of the linked list and link the new node there. The `dequeue` function removes the front node of the queue. If the queue is empty, it simply prints "empty". Otherwise, it deletes the front node and updates the `head` to point to the next node in the queue. Finally, the `display` function traverses the queue and prints each node's `data`, followed by an arrow (`->`), until reaching the end, which is indicated by `nullptr`.
+
+In the `main` function, I create a `Queue` instance called `l`. I add three elements (1, 2, and 3) to the queue using `enqueue`. I then call `display` to show the current state of the queue, which outputs `1->2->3->nullptr`. After that, I call `dequeue` to remove the first element (1) and then call `display` again to show the updated state of the queue, which now outputs `2->3->nullptr`.
